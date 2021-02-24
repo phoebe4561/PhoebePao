@@ -1,0 +1,155 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header div.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 5;
+      -ms-flex: 5 1 400px;
+          flex: 5 1 400px;
+}
+
+header div.logo h4 {
+  font-size: 1.25rem;
+}
+
+header nav {
+  -webkit-box-flex: 2;
+      -ms-flex: 2 1 400px;
+          flex: 2 1 400px;
+}
+
+header nav div.hamburger-icon {
+  position: absolute;
+  right: 2px;
+  top: 0%;
+  cursor: pointer;
+  font-weight: bold;
+  color: #bbb;
+  font-size: 1.3rem;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+header nav ul li {
+  padding: 0.5vw;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+
+section.bgimg {
+  width: 100%;
+  height: 300px;
+  background-color: #e3f8f8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.bgimg h2 {
+  font-size: 2.5rem;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main div.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 1200px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+main div.cards div.card {
+  width: 25%;
+  padding: 0.8rem;
+}
+
+main div.cards div.card img {
+  width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  main div.cards div.card {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header nav ul {
+    display: none;
+  }
+  header nav div.hamburger-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  main div.cards div.card {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1920px) {
+  div.hamburger-icon {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 435px) {
+  section.bgimg h2 {
+    font-size: 2rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
